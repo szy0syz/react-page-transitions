@@ -1,5 +1,11 @@
 # demo
 
+## Preview
+
+[https://protein.yna.app/](https://protein.yna.app/)
+
+![11](/preview/ghost-p1.gif)
+
 ## Steps
 
 > [my-json-server.typicode.com](my-json-server.typicode.com) 是个好东西！
@@ -96,8 +102,6 @@ const Index = props => (
   </motion.div>
 );
 ```
-
-![11](/preview/ghost-p1.gif)
 
 > 要做页面动画，页面左外侧容器div要做初始化
 >
