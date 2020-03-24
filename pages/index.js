@@ -1,7 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 // import fetch from "isomorphic-unfetch";
-import { motion } from "framer-motion";
-
+import { motion } from 'framer-motion';
+import p1 from '../images/image01.png';
+import p2 from '../images/image02.png';
 // animate -> defines animation
 // initial: defines initial state of animation or stating point.
 // exit: defines animation when component exits
@@ -14,24 +15,24 @@ const fadeInUp = {
   initial: {
     y: 60,
     opacity: 0,
-    transition: { duration: 0.6, ease: easing }
+    transition: { duration: 0.6, ease: easing },
   },
   animate: {
     y: 0,
     opacity: 1,
     transition: {
       duration: 0.6,
-      ease: easing
-    }
-  }
+      ease: easing,
+    },
+  },
 };
 
 const stagger = {
   animate: {
     transition: {
-      staggerChildren: 0.12
-    }
-  }
+      staggerChildren: 0.12,
+    },
+  },
 };
 
 const Index = props => (
@@ -49,7 +50,7 @@ const Index = props => (
                 initial={{ x: 60, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                key={product.image}
+                key={product.id}
                 src={product.image}
                 width={250}
               />
@@ -67,28 +68,28 @@ const Index = props => (
 
 const data = [
   {
-    id: "ghost-whey-x-chips-ahoy",
-    name: "Ghost Whey X Chips Ahoy",
+    id: 'ghost-whey-x-chips-ahoy',
+    name: 'Ghost Whey X Chips Ahoy',
     details:
       "We've said it before and we will say it again, nothing beats the real thing. With years of R&D and REAL CHIPS AHOY!® cookie pieces in every scoop, this flavor is second to none.",
-    price: "$39.99",
-    image: "http://maps.yncce.cn/test/image01.png"
+    price: '$39.99',
+    image: p1,
   },
   {
-    id: "ghost-whey-vegan",
-    name: "GHOST® Vegan Protein",
+    id: 'ghost-whey-vegan',
+    name: 'GHOST® Vegan Protein',
     details:
-      "GHOST Vegan Protein combines a premium, fully disclosed vegan protein blend with industry-leading flavors...what more could you ask for?",
-    price: "$49.99",
-    image: "http://maps.yncce.cn/test/image02.png"
-  }
+      'GHOST Vegan Protein combines a premium, fully disclosed vegan protein blend with industry-leading flavors...what more could you ask for?',
+    price: '$49.99',
+    image: p2,
+  },
 ];
 
 Index.getInitialProps = async function() {
   // const res = await fetch("http://my-json-server.typicode.com/wrongakram/demo/products");
   // const data = await res.json();
   return {
-    products: data
+    products: data,
   };
 };
 
