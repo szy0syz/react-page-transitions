@@ -72,7 +72,7 @@ const data = [
     details:
       "We've said it before and we will say it again, nothing beats the real thing. With years of R&D and REAL CHIPS AHOY!® cookie pieces in every scoop, this flavor is second to none.",
     price: '$39.99',
-    image: 'image01.png',
+    image: '/image01.png',
   },
   {
     id: 'ghost-whey-vegan',
@@ -80,7 +80,7 @@ const data = [
     details:
       'GHOST Vegan Protein combines a premium, fully disclosed vegan protein blend with industry-leading flavors...what more could you ask for?',
     price: '$49.99',
-    image: './image02.png',
+    image: '/image02.png',
   },
 ];
 
