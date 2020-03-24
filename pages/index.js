@@ -1,8 +1,7 @@
 import Link from 'next/link';
 // import fetch from "isomorphic-unfetch";
 import { motion } from 'framer-motion';
-import p1 from '../images/image01.png';
-import p2 from '../images/image02.png';
+
 // animate -> defines animation
 // initial: defines initial state of animation or stating point.
 // exit: defines animation when component exits
@@ -73,7 +72,7 @@ const data = [
     details:
       "We've said it before and we will say it again, nothing beats the real thing. With years of R&D and REAL CHIPS AHOY!® cookie pieces in every scoop, this flavor is second to none.",
     price: '$39.99',
-    image: p1,
+    image: 'image01.png',
   },
   {
     id: 'ghost-whey-vegan',
@@ -81,7 +80,7 @@ const data = [
     details:
       'GHOST Vegan Protein combines a premium, fully disclosed vegan protein blend with industry-leading flavors...what more could you ask for?',
     price: '$49.99',
-    image: p2,
+    image: './image02.png',
   },
 ];
 
